@@ -32,15 +32,13 @@
 		});
 
 		function ping() {
-			$.ajax({
-				url:'ping.html',
-				succes:function(result){
+			$.ajax('ping.html')
+				.done(function(){
 					alert('online');
-				},
-				error: function(result) {
-					alert('not online');
-				}
-			});
+				})
+				.fail(function(){
+					alert('offline');
+				})
 			}	
 	</script
 	</body>
