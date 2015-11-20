@@ -32,13 +32,16 @@
 		});
 
 		function ping() {
-			$.load('ping.html', function(response,status,xhr){
-				if(status == 'error') {
+			$.ajax({
+				url:'ping.html',
+				succes:function(result){
+					alert('online');
+				},
+				error: function(result) {
 					alert('not online');
 				}
-			})
 			});
-		}
+			}	
 	</script
 	</body>
 </html>
