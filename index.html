@@ -24,5 +24,24 @@
 	<div class="world-map" style="width: 800px; height: 400px"></div>	
 	
 	<footer>Updated 02-Sept-2015</footer>
+
+	<!--Are we online?-->
+	<script>
+		$(document).ready(function() {
+			ping();
+		});
+
+		function ping() {
+			$.ajax({
+				url:'ping.html',
+				succes: function(result) {
+					alert('online');
+				},
+				error: function(result){
+					alert('not online');
+				}
+			});
+		}
+	</script
 	</body>
 </html>
