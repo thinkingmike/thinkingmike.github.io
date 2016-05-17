@@ -3,6 +3,12 @@
  	var CountryData = function() {
 
  		var country = JSON.parse(localStorage.localData).UNLOCODE.country;
+	 // 	var country = function() {
+		// 	$.getJSON('ports.json', function(data) {
+		// 		return data.UNLOCODE.country;
+		// 	})
+		// }
+
 
  		var thisCountry = function(id) {
  			for(var i = 0, len = country.length ; i < len ; i++) {

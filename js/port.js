@@ -1,7 +1,14 @@
 var PortData = function() {
 
-	var q = JSON.parse(localStorage.localData).UNLOCODE.country;
+	// var q = JSON.parse(localStorage.localData).UNLOCODE.country;
 
+	var q = function() {
+		$.getJSON('ports.json', function(data) {
+			return data.UNLOCODE.country;
+		})
+	}
+
+	alert(q);
 	/*
 	It is a bit strange and I dont really understand it yet, but here how it works.
 

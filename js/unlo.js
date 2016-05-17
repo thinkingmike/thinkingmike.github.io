@@ -19,11 +19,11 @@ $(function() {
 
 	$('.lblCountryID').focus(); 
 
-	var p = new CountryData();
-	var testCountries = ['ad', 'af', 'am', 'n8'];
+	// var p = new CountryData();
+	// var testCountries = ['ad', 'af', 'am', 'n8'];
 
-	for(var e in testCountries) {
-		var f = p.test(testCountries[e]);
+	// for(var e in testCountries) {
+	// 	var f = p.test(testCountries[e]);
 
 		// if(!f.countryName) {
 		// 	console.log(testCountries[e].toUpperCase() + ' is not a country');
@@ -34,11 +34,11 @@ $(function() {
 		// 	console.log(f.countryName + ' has no ports');
 		// }
 
-		if(!f.port) {
-			console.log(f.countryName);
-		}
+	// 	if(!f.port) {
+	// 		console.log(f.countryName);
+	// 	}
 
-	}
+	// }
 	
 
 
